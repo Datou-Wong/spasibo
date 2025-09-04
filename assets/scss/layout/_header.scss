@@ -1,0 +1,29 @@
+.headerImg{
+  height: 70px;
+}
+
+.px-150{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* 初始透明 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0); /* 初始透明 */
+  transition: background-color 0.3s linear;   /* 平滑過渡 */
+}
+
+/* 滾動後套用 */
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px); /* 毛玻璃效果 */
+}
+
+ul, ol {
+  list-style: none;   // 移除點點 / 數字
+  padding-left: 0;    // 移除左邊縮排
+}
