@@ -27,3 +27,42 @@ ul, ol {
   list-style: none;   // 移除點點 / 數字
   padding-left: 0;    // 移除左邊縮排
 }
+
+
+.navbar-toggler {
+  border: none; /* 去掉外框 */
+}
+
+.navbar-toggler-icon {
+  background-image: none; /* 取消預設背景圖 */
+  width: 24px;
+  height: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+  content: "";
+  background-color: white; /* 白色條 */
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+/* 三條橫線的位置 */
+.navbar-toggler-icon::before {
+  top: 0;
+}
+
+.navbar-toggler-icon div {
+  top: 7.5px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: 0;
+}

@@ -88,14 +88,14 @@
   <!-- 促銷活動 -->
   <section class="container my-140">
     <div class="swiper mySwiper">
+
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/assets/images/index/sales2 1.png" style="max-width:700px;"></div>
-        <div class="swiper-slide"><img src="/assets/images/index/sales2 1.png" style="max-width:700px;"></div>
-        <div class="swiper-slide"><img src="/assets/images/index/sales2 1.png" style="max-width:700px;"></div>
-        <div class="swiper-slide"><img src="/assets/images/index/sales2 1.png" style="max-width:700px;"></div>
-        <div class="swiper-slide"><img src="/assets/images/index/sales2 1.png" style="max-width:700px;"></div>
-        <div class="swiper-slide"><img src="/assets/images/index/sales2 1.png" style="max-width:700px;"></div>
+        <div class="swiper-slide"><img src="/assets/images/index/sales1.jpg"></div>
+        <div class="swiper-slide"><img src="/assets/images/index/sales2.jpg"></div>
+        <div class="swiper-slide"><img src="/assets/images/index/sales3.jpg"></div>
+        <div class="swiper-slide"><img src="/assets/images/index/sales4.jpg"></div>
       </div>
+
       <!-- 小圓點 -->
       <div class="swiper-pagination"></div>
       <!-- 左右箭頭 -->
@@ -106,51 +106,63 @@
 
   <!-- 下方預約 -->
 
-  <div class="d-flex justify-content-center mb-5">
-    <!-- 左邊日期時間 -->
-    <div>
-      <p class="text-center text-base-700 fs-4 align-center">線上預約服務</p>
-      <div class="calendar-container me-5">
-        <div class="calendar-panel">
-          <div class="calendar-header">
-            <span class="nav-arrow" id="prevMonth">&lt;</span>
-            <span class="month-year" id="currentMonthYear"></span>
-            <span class="nav-arrow" id="nextMonth">&gt;</span>
-          </div>
-          <div class="weekdays">
-            <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
-          </div>
-          <div class="dates" id="calendarDates">
-          </div>
-        </div>
+  <div class="container mb-5 ">
+    <div class="row">
+      <!-- 左邊日期時間 -->
+      <div class="col-12 col-xl-7 mb-4 mb-xl-0 d-flex justify-content-center align-items-center">
+        <div>
+          <p class="text-center text-base-700 fs-4 align-center">線上預約服務</p>
+          <div class="calendar-container me-5">
+            <div class="calendar-panel">
+              <div class="calendar-header">
+                <span class="nav-arrow" id="prevMonth">&lt;</span>
+                <span class="month-year" id="currentMonthYear"></span>
+                <span class="nav-arrow" id="nextMonth">&gt;</span>
+              </div>
+              <div class="weekdays">
+                <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+              </div>
+              <div class="dates" id="calendarDates">
+              </div>
+            </div>
 
-        <div class="appointment-panel">
-          <div class="appointment-header">
-            <span id="appointmentDay"></span>
-          </div>
-          <div class="appointment-slots">
-            <div class="time-category">上午 / 下午</div>
-            <div class="time-slot">01 : 00 pm</div>
-            <div class="time-slot">03 : 30 pm</div>
-            <div class="time-slot">05 : 00 pm</div>
-            <div class="time-slot">07 : 30 pm</div>
+            <div class="appointment-panel">
+              <div class="appointment-header">
+                <span id="appointmentDay"></span>
+              </div>
+              <div class="appointment-slots">
+                <div class="time-category">上午 / 下午</div>
+                <div class="time-slot">01 : 00 pm</div>
+                <div class="time-slot">03 : 30 pm</div>
+                <div class="time-slot">05 : 00 pm</div>
+                <div class="time-slot">07 : 30 pm</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- 右邊地圖 -->
-    <div>
-      <div class="map-container mb-5">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.0341644008686!2d120.60754551155452!3d24.170534578295932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e051eda068d%3A0x3f32708a58d5ffe5!2zNDA35Y-w5Lit5biC6KW_5bGv5Y2A5bel5qWt5Y2A5LiA6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1756969177673!5m2!1szh-TW!2stw"
-          width="590" height="290" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- 右邊地圖 -->
+      <div class="col-12 col-xl-5 mb-4 mb-xl-0 ">
+        <div>
+          <div class="map-container mb-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.0341644008686!2d120.60754551155452!3d24.170534578295932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e051eda068d%3A0x3f32708a58d5ffe5!2zNDA35Y-w5Lit5biC6KW_5bGv5Y2A5bel5qWt5Y2A5LiA6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1756969177673!5m2!1szh-TW!2stw"
+              width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+          <p class="fs-5 text-base-900 fw-semibold">營業時間：週一至週五 10:00-20:00 周六 10:00-18:30 週日公休</p>
+          <p class="fs-5 text-base-900 fw-semibold">預約專線：04-266*****</p>
+          <p class="fs-4 text-base-900 fw-normal">台中市西屯區工業區一路100號</p>
+        </div>
 
       </div>
-      <p class="fs-5 text-base-900 fw-semibold">營業時間：週一至週五 10:00-20:00 周六 10:00-18:30 週日公休</p>
-      <p class="fs-5 text-base-900 fw-semibold">預約專線：04-266*****</p>
-      <p class="fs-4 text-base-900 fw-normal">台中市西屯區工業區一路100號</p>
+
+
+
     </div>
+
+
   </div>
 
 

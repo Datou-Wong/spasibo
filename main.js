@@ -2,6 +2,9 @@
 import './assets/scss/all.scss';
 // 引入 Bootstrap JS
 import 'bootstrap/dist/js/bootstrap.min.js';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 console.log('Hello world');
 
@@ -12,11 +15,11 @@ window.addEventListener("scroll", function () {
   if (!navbar || !logo) return;
 
   const scrollY = window.scrollY;
-  const triggerHeight = logo.offsetHeight / 2;
+  const triggerHeight = logo.offsetHeight;
 
   // 透明度
-  let opacity = Math.min(scrollY / triggerHeight * 0.3, 0.3);
-  navbar.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+  let opacity = Math.min(scrollY / triggerHeight * 1);
+  navbar.style.backgroundColor = `rgba(190, 136, 116, ${opacity})`;
 });
 
 // 促銷左右滑動

@@ -38,14 +38,15 @@
 /* 左右箭頭 */
 .swiper-button-prev,
 .swiper-button-next {
-  color: $base-900;
+  color: $base-900 !important;
   opacity: 0.7;
 }
 
 
+
 /* 小圓點背景顏色 */
 .swiper-pagination-bullet {
-  background: $base-900;
+  background: $base-900 !important;
   /* 未選中 */
   opacity: 0.3;
   /* 可調透明度 */
@@ -53,7 +54,7 @@
 
 /* 當前選中的小圓點 */
 .swiper-pagination-bullet-active {
-  background: $base-900;
+  background: $base-900 !important;
   /* 選中顏色 */
   opacity: 1;
 }
@@ -175,4 +176,15 @@
 .map-container {
   border-radius: 28px;
   overflow: hidden;
+}
+
+.mySwiper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
