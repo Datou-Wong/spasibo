@@ -21,6 +21,27 @@
 .mb-32{
     margin-bottom: 32px;
 }
+.col-lg-4.col-md-6.col-12.d-flex {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* 撐滿父容器的高 */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* 撐滿剩餘空間 */
+}
+
+.card-footer-info {
+  margin-top: auto; /* 推到底部 */
+  display: flex;
+  flex-direction: column;
+}
 
 .fs-48 {
     font-size: 48px;
