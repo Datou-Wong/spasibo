@@ -1,0 +1,90 @@
+.serviceHeader {
+    height: 400px;
+    background-image: url(/assets/images/index/img1-01.jpg);
+    background-size: cover;
+    background-position: center;
+    /* 置中圖片 */
+    background-repeat: no-repeat;
+    /* 不重複 */
+}
+
+.borderBottom{
+    border-bottom: 5px solid $base-900;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: $base-600;  
+  color: $base-400;            
+  border-color: transparent;  /* 移除邊框或自訂 */
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.me-120 {
+    margin-right: 120px;
+}
+
+@media (max-width:1440px) {
+    .me-120 {
+        margin-right: 40px;
+    }
+
+    .fs-48 {
+        font-size: 40px;
+    }
+    .fs-32 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:992px) {
+    .me-120 {
+        margin-right: 20px;
+    }
+    .fs-48 {
+        font-size: 28px;
+    }
+    .fs-32 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:770px) {
+    .me-120 {
+        margin-right: 16px;
+    }
+
+    .fs-48 {
+        font-size: 24px;
+    }
+    .fs-32 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:540px) {
+    .me-120 {
+        margin-right: 8px;
+    }
+
+    .fs-48 {
+        font-size: 16px;
+    }
+    .fs-32 {
+        font-size: 16px;
+    }
+    .serSub{
+        display: none;
+    }
+}
+
