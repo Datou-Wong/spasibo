@@ -5,6 +5,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 console.log('Hello world');
 
@@ -40,4 +42,10 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+
+AOS.init({
+  duration: 1000, // 動畫持續 1 秒
+  easing: 'ease-in-out'
 });

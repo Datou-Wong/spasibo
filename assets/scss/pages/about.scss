@@ -1,0 +1,44 @@
+.aboutHeadImg {
+    min-height: 400px;
+    background-image: url(/assets/images/about/top-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    /* 置中圖片 */
+    background-repeat: no-repeat;
+    /* 不重複 */
+}
+
+.plant {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.center-banner {
+    width: 100%;
+    background-image: url(/assets/images/about/center-banner.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 720px) {
+    .center-banner {
+        min-height: 768px;
+        background-image: url(/assets/images/about/center-banner-sm.jpg);
+    }
+}
+
+.down-banner{
+        width: 100%;
+    background-image: url(/assets/images/about/down-banner.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

@@ -66,3 +66,9 @@ ul, ol {
 .navbar-toggler-icon::after {
   bottom: 0;
 }
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        flex-grow: 0 ;
+    }
+}
