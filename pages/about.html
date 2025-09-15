@@ -17,7 +17,7 @@
         <%- include('./layout/header'); -%>
             <div class="aboutHeadImg">
             </div>
-            <p class="text-center bg-base-900 fs-5 fw-normal text-white py-1">與閨密共享療育時光 兩人同行按摩享9折優惠 手刀預定</p>
+            <p class="text-center bg-base-900 fs-md-5 fs-7 fw-normal text-white py-1">與閨密共享療育時光 兩人同行按摩享9折優惠 手刀預定</p>
     </section>
     <!-- 源於「感謝」的初心 -->
     <div data-aos="fade-up" class="container py-5">
@@ -26,19 +26,22 @@
             <h2>謝謝身體 善待自己從這裡開始</h2>
         </div>
         <div class="row d-flex flex-column-reverse flex-md-row align-items-center justify-content-center">
-            <div class="col-md-5 col-12">
+            <div data-aos="fade-up" data-aos-delay="500" class="col-md-5 col-12 ">
                 <p class="pe-5 fs-lg-4 fs-md-5 fs-6">在快節奏的生活裡，身體與心靈常被壓力緊緊纏繞，久而久之，我們忽略了傾聽自身的需求。SPASIBO
                     誕生於此初心——希望為每一位走進來的你，帶來一份專業呵護與深層放鬆。品牌名取自俄語「Спасибо」，意為「謝謝」，不僅是我們對顧客的感恩，更是提醒每個人學會對自己的身體說聲「謝謝」。</p>
             </div>
-            <div class="col-md-5 col-12 mb-lg-0 mb-3">
+            <div data-aos="fade-up" class="col-md-5 col-12 mb-lg-0 mb-3">
                 <img class="plant" src="/assets/images/about/about1.jpg" alt="plant">
             </div>
         </div>
     </div>
     <!-- 中間banner -->
-    <div data-aos="fade-up" class="center-banner"></div>
-
-
+    <div data-aos="fade-up">
+        <picture>
+            <source media="(min-width: 768px)" srcset="/images/about/center-banner.jpg">
+            <img src="/images/about/center-banner-sm.jpg" alt="spasibo承諾" class="img-fluid banner">
+        </picture>
+    </div>
     <!-- 下方文字 -->
     <div class="container py-5">
         <div class="row aboutText1 d-flex align-items-center justify-content-center">
@@ -50,49 +53,18 @@
                 <p class="">專業呵護｜深層放鬆｜喚醒自癒能量 —— 這是 SPASIBO 的承諾。我們相信，唯有在身心平衡的狀態下，才能迎接更美好的生活。選擇
                     SPASIBO，不僅是一次按摩，更是一份善待自己的儀式。</p>
             </div>
-
         </div>
     </div>
-
     <!-- 下方banner -->
-    <img data-aos="fade-up" class="down-banner mb-lg-4 mb-3" src="/assets/images/about/down-banner.jpg" alt="down-banner">
-
-
-
-
-
-
-
-
-
-    <!-- 下方地圖 -->
-    <div class="container mb-5" data-aos="fade-up">
-        <div class="row">
-            <div class="col-12 col-md-6 mb-4 mb-xl-0 ">
-                <div class="map-container mb-5 ">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.0341644008686!2d120.60754551155452!3d24.170534578295932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e051eda068d%3A0x3f32708a58d5ffe5!2zNDA35Y-w5Lit5biC6KW_5bGv5Y2A5bel5qWt5Y2A5LiA6LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1756969177673!5m2!1szh-TW!2stw"
-                        width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <!-- 文字 -->
-            <div class="col-md-6 col-12 d-flex flex-column justify-content-center fs-5 text-base-900 fw-semibold">
-                <p>營業時間：</p>
-                <p>週一至週五 10:00-20:00</p>
-                <p>周六 10:00-18:30 </p>
-                <p>週日公休</p>
-                <p>預約專線：04-266*****</p>
-                <p>地址：台中市西屯區工業區一路100號</p>
-            </div>
-        </div>
+    <div data-aos="fade-up">
+        <picture>
+            <source media="(min-width: 768px)" srcset="/images/about/down-banner.jpg">
+            <img src="/images/about/down-banner-sm.jpg" alt="down-banner" class="img-fluid banner">
+        </picture>
     </div>
-
     <%- include('./layout/footer'); -%>
 
         <script type="module" src="../main.js"></script>
-        <script type="module" src="../calendar.js"></script>
-
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
