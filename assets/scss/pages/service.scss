@@ -8,39 +8,44 @@
     /* 不重複 */
 }
 
-.borderBottom{
+.borderBottom {
     border-bottom: 5px solid $base-900;
 }
 
 .nav-tabs .nav-link.active {
-  background-color: $base-600;  
-  color: $base-400;            
-  border-color: transparent;  /* 移除邊框或自訂 */
+    background-color: $base-600;
+    color: $base-400;
+    border-color: transparent;
+    /* 移除邊框或自訂 */
 }
 
-.mb-32{
+.mb-32 {
     margin-bottom: 32px;
 }
+
 .col-lg-4.col-md-6.col-12.d-flex {
-  display: flex;
+    display: flex;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* 撐滿父容器的高 */
+.card img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
 }
 
 .card-body {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; /* 撐滿剩餘空間 */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* 撐滿剩餘空間 */
 }
 
 .card-footer-info {
-  margin-top: auto; /* 推到底部 */
-  display: flex;
-  flex-direction: column;
+    margin-top: auto;
+    /* 推到底部 */
+    display: flex;
+    flex-direction: column;
 }
 
 .fs-48 {
@@ -63,6 +68,7 @@
     .fs-48 {
         font-size: 40px;
     }
+
     .fs-32 {
         font-size: 28px;
     }
@@ -72,9 +78,11 @@
     .me-120 {
         margin-right: 20px;
     }
+
     .fs-48 {
         font-size: 28px;
     }
+
     .fs-32 {
         font-size: 20px;
     }
@@ -88,6 +96,7 @@
     .fs-48 {
         font-size: 24px;
     }
+
     .fs-32 {
         font-size: 16px;
     }
@@ -101,11 +110,36 @@
     .fs-48 {
         font-size: 16px;
     }
+
     .fs-32 {
         font-size: 16px;
     }
-    .serSub{
+
+    .serSub {
         display: none;
     }
 }
 
+
+/* overlay 初始隱藏 */
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* 半透明黑色 */
+    opacity: 0;
+    transition: 0.3s ease;
+    border-radius: 16px;
+}
+
+/* hover 顯示 overlay */
+.position-relative:hover .overlay {
+    opacity: 1;
+}
+
+/* hover 圖片變暗 */
+.position-relative:hover img {
+    filter: brightness(60%);
+}
