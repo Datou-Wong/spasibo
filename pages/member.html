@@ -12,6 +12,16 @@
 </head>
 
 <body class="bg-base-600">
+    <!-- 上方BANNER -->
+    <section class="logo">
+        <%- include('./layout/header'); -%>
+            <div data-aos="fade-up">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="/images/login/banner.jpg">
+                    <img src="/images/login/banner.jpg" alt="login banner" class="img-fluid banner">
+                </picture>
+            </div>
+    </section>
     <div class="container py-150">
         <h3 class="fw-bold fs-md-4 fs-3 ps-5 mb-lg-5 mb-4">歡迎回來</h3>
         <!-- 導覽列 -->
