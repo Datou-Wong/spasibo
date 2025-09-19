@@ -1,5 +1,5 @@
 // 引入 SCSS 檔案
-import './assets/scss/all.scss';
+import '../assets/scss/all.scss';
 // 引入 Bootstrap JS
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'swiper/css';
@@ -52,12 +52,3 @@ AOS.init({
 
 
 
-fetch('http://104.199.223.185/api/your-api-route')
-  .then(response => response.json())
-  .then(data => {
-    // 這裡處理從後端拿到的資料
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('API 請求失敗:', error);
-  });
