@@ -49,3 +49,15 @@ AOS.init({
   duration: 1000, // 動畫持續 1 秒
   easing: 'ease-in-out'
 });
+
+
+
+fetch('http://104.199.223.185/api/your-api-route')
+  .then(response => response.json())
+  .then(data => {
+    // 這裡處理從後端拿到的資料
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('API 請求失敗:', error);
+  });
